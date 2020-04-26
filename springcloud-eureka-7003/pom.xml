@@ -5,12 +5,13 @@
     <artifactId>springcloudparent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springcloud-consumer-80</artifactId>
+  <artifactId>springcloud-eureka-7003</artifactId>
 
-  <dependencies>
+	<dependencies>
+        <!--eureka-server服务端 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
@@ -21,12 +22,5 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
-        <dependency>
-        	<groupId>com.cce</groupId>
-        	<artifactId>springcloud-api</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        
-        
-  </dependencies>
+    </dependencies>
 </project>
