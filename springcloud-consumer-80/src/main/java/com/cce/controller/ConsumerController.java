@@ -12,7 +12,7 @@ import com.cce.entity.Dept;
 
 @RestController
 public class ConsumerController {
-	private static final String REST_URL_PREFIX = "http://localhost:8001";
+	private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-DEPT";
 
 	@Autowired
 	private RestTemplate restTemplate;
