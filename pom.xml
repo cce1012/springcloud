@@ -87,5 +87,7 @@
   <modules>
   	<module>springcloud-api</module>
   	<module>springcloud-provider-8001</module>
+  	<module>springcloud-consumer-80</module>
+  	<module>springcloud-eureka-7001</module>
   </modules>
 </project>

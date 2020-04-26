@@ -21,3 +21,8 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200
+
+eureka:
+  client: #客户端注册进eureka服务器列表
+    service-url: 
+      defaultZone: http://localhost:7001/eureka      
