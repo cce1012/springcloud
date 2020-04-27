@@ -94,5 +94,6 @@
   	<module>springcloud-provider-8002</module>
   	<module>springcloud-consumer-fegn</module>
   	<module>springcloud-consumer-feign</module>
+  	<module>springcloud-provider-hystrix-8001</module>
   </modules>
 </project>
