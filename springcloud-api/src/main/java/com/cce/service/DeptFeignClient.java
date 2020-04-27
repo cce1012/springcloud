@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.cce.entity.Dept;
-@FeignClient(value="SPRINGCLOUD-DEPT")
+@FeignClient(value="SPRINGCLOUD-DEPT",fallbackFactory=DeptClientFallbackFactory.class)
 public interface DeptFeignClient {
 
     @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
