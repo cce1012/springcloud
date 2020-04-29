@@ -1,0 +1,4 @@
+#application.yml(是用户级的资源配置项)
+spring:
+   application:
+    name: springcloud-config-client

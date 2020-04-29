@@ -1,0 +1,29 @@
+server:
+  port: 9527
+    
+spring:
+   application:
+    name: springcloud-zuul-gateway  
+
+eureka:
+  client: #客户端注册进eureka服务器列表
+    service-url: 
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka,http://localhost:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true   #访问路径可以显示IP地址
+
+zuul:
+  prefix: /cce
+  ignored-services: springcloud-dept      # 将原有路由关闭
+  routes:
+    mydept.serviceId: springcloud-dept
+    mydept.path: /dept/**
+    
+
+info: 
+  app.name: cce-springcloud
+  company.name: www.cce.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

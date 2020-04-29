@@ -32,7 +32,7 @@ eureka:
     prefer-ip-address: true   #访问路径可以显示IP地址
 
 info: 
-  app.name: cce-springcloud
-  company.name: www.cce.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  app.name: web-microservicecloud
+  company.name: www.web.com
+  build.artifactId: springcloud-provider-8001
+  build.version: 0.0.1-SNAPSHOT
